@@ -32,7 +32,7 @@ document.querySelector('.btn-roll').addEventListener('click', function () {
         //getting a random no from 0 to 6
         var dice = Math.floor(Math.random() * 6) + 1;
         document.querySelector('.dice').style.display = 'block';
-        console.log(dice);
+        // console.log(dice);
         //changing the src of img tag
         document.querySelector('.dice').src = 'public/img/dice-' + dice + '.png';
         if (dice === 1) {
@@ -59,6 +59,7 @@ document.querySelector('.btn-hold').addEventListener('click', function () {
         } else {
             finalScore = 100;
         }
+        // console.log(input, finalScore);
         if (scores[activePlayer] >= finalScore) {
             document.querySelector('.dice').style.display = 'none';
             isGamePlaying = false;
