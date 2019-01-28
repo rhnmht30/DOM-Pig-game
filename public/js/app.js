@@ -59,7 +59,7 @@ document.querySelector('.btn-hold').addEventListener('click', function () {
         } else {
             finalScore = 100;
         }
-        if (scores[activePlayer] >= 20) {
+        if (scores[activePlayer] >= finalScore) {
             document.querySelector('.dice').style.display = 'none';
             isGamePlaying = false;
             document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
